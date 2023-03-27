@@ -45,3 +45,16 @@ class CVController extends Controller
         return $this->template;
     }
 }
+
+
+//namespace App\Http\Controllers;
+//
+//use Illuminate\Http\Request;
+
+//class CVController extends Controller
+//{
+//    public function cv()
+//    {
+//        return view('CV');
+//    }
+//}

@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CVController;
 
+use App\Http\Controllers\LotController;
+
+use App\Http\Controllers\BetController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +22,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('yovbak/cv',[CVController::class,'index']);
+Route::resource('lots' , LotController ::class);
+Route::resource('bets' , BetController ::class);
+
